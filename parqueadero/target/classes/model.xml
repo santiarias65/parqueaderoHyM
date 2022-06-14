@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.12" class="java.beans.XMLDecoder">
+ <object class="soft.model.Parqueadero" id="Parqueadero0">
+  <void property="registros">
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaTabla">
+      <string>2022-04-12 Hora 23:41</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>pelon</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>8000</int>
+           </void>
+           <void property="nombre">
+            <string>particular</string>
+           </void>
+           <void property="precio">
+            <int>1500</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaTabla">
+      <string>2022-04-12 Hora 23:45</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>calvo</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>10000</int>
+           </void>
+           <void property="nombre">
+            <string>camion</string>
+           </void>
+           <void property="precio">
+            <int>2000</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaTabla">
+      <string>2022-04-12 Hora 23:46</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>12</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>10000</int>
+           </void>
+           <void property="nombre">
+            <string>camion</string>
+           </void>
+           <void property="precio">
+            <int>2000</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaTabla">
+      <string>2022-04-12 Hora 23:49</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>55</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>10000</int>
+           </void>
+           <void property="nombre">
+            <string>camion</string>
+           </void>
+           <void property="precio">
+            <int>2000</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaTabla">
+      <string>2022-04-13 Hora 0:2</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>44</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>4000</int>
+           </void>
+           <void property="nombre">
+            <string>moto</string>
+           </void>
+           <void property="precio">
+            <int>700</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaCadena">
+      <string>2022-04-13T00:11:52.5143114</string>
+     </void>
+     <void property="fechaTabla">
+      <string>2022-04-13 Hora 0:11</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>44</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>8000</int>
+           </void>
+           <void property="nombre">
+            <string>particular</string>
+           </void>
+           <void property="precio">
+            <int>1500</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="soft.model.Registro">
+     <void property="fechaCadena">
+      <string>2022-04-13T18:10:28.1597364</string>
+     </void>
+     <void property="fechaTabla">
+      <string>2022-04-13 Hora 18:10</string>
+     </void>
+     <void property="vehiculo">
+      <object class="soft.model.Vehiculo">
+       <void property="placa">
+        <string>cvq28d</string>
+       </void>
+       <void property="tipo">
+        <object class="soft.model.Tipo">
+         <void property="tipo">
+          <object class="soft.model.DatosTipo">
+           <void property="fraccion">
+            <int>8000</int>
+           </void>
+           <void property="nombre">
+            <string>particular</string>
+           </void>
+           <void property="precio">
+            <int>1500</int>
+           </void>
+          </object>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

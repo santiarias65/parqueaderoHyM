@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="734.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft.controladores.PrincipalController">
+   <children>
+      <SplitPane dividerPositions="0.4273927392739274" prefHeight="734.0" prefWidth="1214.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="732.0" prefWidth="509.0" style="-fx-background-color: #008080;">
+               <children>
+                  <Label layoutX="85.0" layoutY="152.0" prefHeight="146.0" prefWidth="345.0" text="Power H&amp;m" textFill="WHITE">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="130.0" fitWidth="284.0" layoutX="157.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagenCarro.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="23.0" layoutY="358.0" mnemonicParsing="false" onAction="#abrirIngreso" prefHeight="106.0" prefWidth="231.0" style="-fx-background-color: #20B2AA; -fx-border-color: #FFFFFF;" text="Ingresar vehiculo" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="267.0" layoutY="359.0" mnemonicParsing="false" onAction="#abrirSalida" prefHeight="106.0" prefWidth="231.0" style="-fx-background-color: #20B2AA; -fx-border-color: #FFFFFF;" text="Retirar vehiculo" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="21.0" layoutY="495.0" mnemonicParsing="false" onAction="#listarVehiculos" prefHeight="106.0" prefWidth="231.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #20B2AA;" text="Listar vehiculos" textFill="#fffefe">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="267.0" layoutY="495.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="231.0" style="-fx-background-color: #20B2AA; -fx-border-color: #FFFFFF;" text="Salir" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="732.0" prefWidth="734.0" style="-fx-background-color: #5F9EA0;">
+               <children>
+                  <AnchorPane fx:id="listaPane" prefHeight="732.0" prefWidth="687.0" style="-fx-background-color: #5F9EA0;" visible="false">
+                     <children>
+                        <TableView fx:id="tablaIngresos" layoutX="84.0" layoutY="95.0" prefHeight="506.0" prefWidth="519.0">
+                           <columns>
+                              <TableColumn fx:id="clFechaIngreso" prefWidth="142.0" text="Fecha Ingreso" />
+                              <TableColumn fx:id="clPlaca" prefWidth="121.0" text="Placa" />
+                              <TableColumn fx:id="clTipo" prefWidth="119.0" text="Tipo Vehiculo" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ingresoPane" layoutX="-3.0" layoutY="1.0" prefHeight="732.0" prefWidth="687.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="296.0" layoutY="210.0" prefHeight="45.0" prefWidth="96.0" text="Placa" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="placaIngresoTxt" alignment="CENTER" layoutX="264.0" layoutY="269.0" prefHeight="63.0" prefWidth="159.0">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="244.0" layoutY="518.0" mnemonicParsing="false" onAction="#ingresarVehiculo" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: #00FF00;" text="Ingresar vehiculo">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="comboTipo" layoutX="264.0" layoutY="417.0" prefHeight="45.0" prefWidth="159.0" />
+                        <Label alignment="CENTER" layoutX="265.0" layoutY="356.0" prefHeight="45.0" prefWidth="159.0" text="Tipo Vehiculo" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="cobroPane" layoutX="-3.0" prefHeight="734.0" prefWidth="687.0" visible="false">
+                     <children>
+                        <TextField fx:id="buscarRegistro" alignment="CENTER" layoutX="268.0" layoutY="292.0" onKeyPressed="#filtrarPlacas" prefHeight="63.0" prefWidth="159.0">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="280.0" layoutY="403.0" mnemonicParsing="false" onAction="#calcularTotalSalida" prefHeight="63.0" prefWidth="135.0" style="-fx-background-color: #00FF00;" text="Cobrar">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER" layoutX="300.0" layoutY="219.0" prefHeight="45.0" prefWidth="96.0" text="Placa" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
